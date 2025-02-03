@@ -10,6 +10,8 @@ This repository contains the code for a web-based chat application. The Chat App
 - **User Profiles:** Customize your profile with a username and avatar.
 - **Chat Rooms:** Join existing chat rooms or create new ones.
 
+##Live Demo : [LIVE](https://chat-app-steel-six.vercel.app/)
+
 ## Technologies Used
 
 - **Frontend:**
