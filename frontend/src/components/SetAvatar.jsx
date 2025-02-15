@@ -11,7 +11,8 @@ import { setAvatarRoute } from "../utils/APIRoutes";
 
 
 export default function SetAvatar() {
-  const api = `https://api.multiavatar.com/4645646`;
+  // const api = `https://api.multiavatar.com`;
+  const api = `https://api.dicebear.com/9.x/adventurer/svg?seed=`;
   const navigate = useNavigate();
   const [avatars, setAvatars] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
@@ -61,7 +62,7 @@ export default function SetAvatar() {
       for (let i = 0; i < 4; i++) {
           try {
               const image = await axios.get(
-                  `${api}/${Math.round(Math.random() * 1000)}`
+                  `${api}${Math.round(Math.random() * 1000)}`
               );
               console.log("image");
               const buffer = Buffer.from(image.data); // Use `Buffer.from` instead of `new Buffer`
